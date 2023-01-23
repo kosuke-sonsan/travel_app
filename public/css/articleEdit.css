@@ -1,0 +1,573 @@
+.edit-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("../images/japanmap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 88.5vh;
+  z-index: 0;
+}
+
+.edit-view::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.comment {
+  resize: none;
+  width: 50%;
+  height: 30%;
+}
+
+.edit-title {
+  font-size: 3em;
+}
+
+.button_position {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.css-button-3d--grey {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5%;
+  margin-top: 10%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #6c757d;
+  box-shadow: 0 5px #495057;
+}
+
+.css-button-3d--grey:hover {
+  box-shadow: 0 3px #495057;
+  top: 1px;
+}
+
+.css-button-3d--grey:active {
+  box-shadow: 0 0 #495057;
+  top: 5px;
+}
+
+.css-button-sharp--sky {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 15%;
+  margin-top: 15%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #4433ff;
+  border-radius: 10px;
+  background: #4433ff;
+}
+
+.css-button-sharp--sky:hover {
+  background: #fff;
+  color: #4433ff
+}
+
+@media screen and (max-width: 768px) {
+
+  .edit-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("../images/japanmap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 88.5vh;
+    z-index: 0;
+  }
+
+  .edit-view::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+  }
+
+  .comment {
+    resize: none;
+    width: 50%;
+    height: 30%;
+  }
+
+  .edit-title {
+    font-size: 3em;
+  }
+
+  .button_position {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .css-button-3d--grey {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5%;
+    margin-top: 10%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #6c757d;
+    box-shadow: 0 5px #495057;
+  }
+
+  .css-button-3d--grey:hover {
+    box-shadow: 0 3px #495057;
+    top: 1px;
+  }
+
+  .css-button-3d--grey:active {
+    box-shadow: 0 0 #495057;
+    top: 5px;
+  }
+
+  .css-button-sharp--sky {
+    min-width: 100px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 15%;
+    margin-top: 15%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid #4433ff;
+    border-radius: 10px;
+    background: #4433ff;
+  }
+
+  .css-button-sharp--sky:hover {
+    background: #fff;
+    color: #4433ff
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .edit-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("../images/japanmap.png");
+    background-repeat: repeat;
+    background-size: contain;
+    width: auto;
+    z-index: 0;
+  }
+
+  .edit-view::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+  }
+
+  .comment {
+    resize: none;
+    width: 60%;
+    height: 25%;
+  }
+
+  .edit-title {
+    font-size: 1.5em;
+  }
+
+  .button_position {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-bottom: 30%;
+  }
+
+  .css-button-3d--grey {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: -15%;
+    margin-top: 10%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #6c757d;
+    box-shadow: 0 5px #495057;
+  }
+
+  .css-button-3d--grey:hover {
+    box-shadow: 0 3px #495057;
+    top: 1px;
+  }
+
+  .css-button-3d--grey:active {
+    box-shadow: 0 0 #495057;
+    top: 5px;
+  }
+
+  .css-button-sharp--sky {
+    min-width: 100px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 15%;
+    margin-top: 15%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid #4433ff;
+    border-radius: 10px;
+    background: #4433ff;
+  }
+
+  .css-button-sharp--sky:hover {
+    background: #fff;
+    color: #4433ff
+  }
+}
+
+article view .article-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("../images/japanmap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 88.5vh;
+  z-index: 0;
+}
+
+.article-view::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.comment {
+  resize: none;
+  width: 50%;
+  height: 30%;
+}
+
+.button_position {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.css-button-3d--grey {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5%;
+  margin-top: 10%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #6c757d;
+  box-shadow: 0 5px #495057;
+}
+
+.css-button-3d--grey:hover {
+  box-shadow: 0 3px #495057;
+  top: 1px;
+}
+
+.css-button-3d--grey:active {
+  box-shadow: 0 0 #495057;
+  top: 5px;
+}
+
+.css-button-3d--sand {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 5%;
+  margin-top: 10%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #9370DB;
+  box-shadow: 0 5px #adb5bd;
+}
+
+.css-button-3d--sand:hover {
+  box-shadow: 0 3px #adb5bd;
+  top: 1px;
+}
+
+.css-button-3d--sand:active {
+  box-shadow: 0 0 #adb5bd;
+  top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .article-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("../images/japanmap.png");
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .article-view::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+  }
+
+  .comment {
+    resize: none;
+    width: 50%;
+    height: 30%;
+  }
+
+  .button_position {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .css-button-3d--grey {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5%;
+    margin-top: 10%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #6c757d;
+    box-shadow: 0 5px #495057;
+  }
+
+  .css-button-3d--grey:hover {
+    box-shadow: 0 3px #495057;
+    top: 1px;
+  }
+
+  .css-button-3d--grey:active {
+    box-shadow: 0 0 #495057;
+    top: 5px;
+  }
+
+  .css-button-3d--sand {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #9370DB;
+    box-shadow: 0 5px #adb5bd;
+  }
+
+  .css-button-3d--sand:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+  }
+
+  .css-button-3d--sand:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .article-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("../images/japanmap.png");
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .article-view::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+  }
+
+  .comment {
+    resize: none;
+    width: 50%;
+    height: 30%;
+  }
+
+  .button_position {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .css-button-3d--grey {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5%;
+    margin-top: 10%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #6c757d;
+    box-shadow: 0 5px #495057;
+  }
+
+  .css-button-3d--grey:hover {
+    box-shadow: 0 3px #495057;
+    top: 1px;
+  }
+
+  .css-button-3d--grey:active {
+    box-shadow: 0 0 #495057;
+    top: 5px;
+  }
+
+  .css-button-3d--sand {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 5%;
+    margin-top: 10%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #9370DB;
+    box-shadow: 0 5px #adb5bd;
+  }
+
+  .css-button-3d--sand:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+  }
+
+  .css-button-3d--sand:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
+  }
+}

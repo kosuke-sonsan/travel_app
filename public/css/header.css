@@ -1,0 +1,88 @@
+.header {
+  /* flexboxの設定 */
+  display: flex;
+  justify-content: space-between;
+  /* フォントや色の設定 */
+  height: 70px;
+  font-size: 18px;
+  background-color: #5CE1E6;
+  z-index: 0;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  z-index: 0;
+  text-decoration: none;
+}
+
+.header-menu__item {
+  margin: 20px;
+  z-index: 0;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  z-index: 0;
+  text-decoration: none;
+}
+
+/**  レスポンシブデザイン  **/
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    /* flexboxの設定 */
+    display: flex;
+    justify-content: space-between;
+    /* フォントや色の設定 */
+    height: 70px;
+    font-size: 18px;
+    background-color: #5CE1E6;
+    z-index: 0;
+  }
+
+  .header-menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    z-index: 0;
+    text-decoration: none;
+  }
+
+  .header-menu__item {
+    margin: 20px;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .header {
+    /* flexboxの設定 */
+    display: flex;
+    justify-content: space-between;
+    /* フォントや色の設定 */
+    height: 70px;
+    font-size: 7px;
+    background-color: #5CE1E6;
+    z-index: 0;
+  }
+
+  .header-menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    z-index: 0;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .header-menu__item {
+    margin: 7px;
+  }
+}
