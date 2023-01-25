@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  @component('components.login-header')
+  @component('components.loginHeader')
   @endcomponent
   @yield('content')
 </body>

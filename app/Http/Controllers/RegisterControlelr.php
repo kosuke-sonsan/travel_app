@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 
 class RegisterController extends Controller
 {
-    public function index_register()
+    public function index()
     {
         return view('register');
     }
