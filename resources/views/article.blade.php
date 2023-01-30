@@ -13,9 +13,13 @@
       <input type="file" class="file-position">
     </label>
     
-    <a href="" style="text-decoration:none;" class="article-text">
-      <div class="css-button-shadow-border-sliding--sky">投稿する</div>
-    </a>
+    
+    <form action="/prefecture" method="post">
+      @csrf
+      <a href="" style="text-decoration:none;" class="article-text">
+        <div class="css-button-shadow-border-sliding--sky">投稿する</div>
+      </a>
+    </form>
   </div>
 
 

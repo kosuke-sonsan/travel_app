@@ -13,8 +13,11 @@ class ArticleController extends Controller
         return view('article');
     }
     
-    public function create(Request $request)
+    public function article_create(Request $request)
     {
+        $user = Auth::user();
+        $user_id = $user->id;
+        
         $title = $request->title;
         $prefecture = $requrest->prefecture;
         $content = $request->content;

@@ -24,6 +24,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/prefecture', [PrefectureController::class, 'index_prefecture']);
 
     Route::get('/prefecture/article', [ArticleController::class, 'index_article']);
+    Route::get('/prefecture/article', [ArticleController::class, 'article_create']);
 
     Route::get('/article/list', [ArticleController::class, 'index_list']);
     
